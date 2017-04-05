@@ -13,12 +13,14 @@ if (isset($_POST["submit"]))
 		'3,5,2,1,R',
 		"$value1,$value2,$value3,$value4,?");
 
+//create CSV
 	$fp = fopen('balance_csv.csv', 'w');
 	foreach($data as $line){
 		$val = explode(",",$line);
 		fputcsv($fp, $val);
 	}
 	fclose($fp);
+
 	$cmd = 'java -classpath "weka.jar" weka.core.converters.CSVLoader -N "last" balance_csv.csv > balance_unseen_test.arff ';
 	exec($cmd,$output);
 // run unseen data -p 5 is class attribute
