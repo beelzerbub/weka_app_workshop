@@ -2,20 +2,20 @@
 
 @attribute age numeric
 @attribute sex numeric
-@attribute chest_pain numeric
-@attribute rbp numeric
-@attribute sc numeric
-@attribute fbs numeric
-@attribute rer numeric
-@attribute max_hr numeric
-@attribute eia numeric
+@attribute chest numeric
+@attribute resting_blood_pressure numeric
+@attribute serum_cholestoral numeric
+@attribute fasting_blood_sugar numeric
+@attribute resting_electrocardiographic_results numeric
+@attribute maximum_heart_rate_achieved numeric
+@attribute exercise_induced_angina numeric
 @attribute oldpeak numeric
-@attribute slope_peak numeric
-@attribute major_vessel numeric
+@attribute slope numeric
+@attribute number_of_major_vessels numeric
 @attribute thal numeric
-@attribute class {present,absent}
+@attribute class {absent,present}
 
 @data
-70,1,4,130,322,0,2,109,0,2.4,2,3,3,present
 67,0,3,115,564,0,2,160,0,1.6,2,0,7,absent
+70,1,4,130,322,0,2,109,0,2.4,2,3,3,present
 71,0,3,110,265,1,2,130,0,0,1,1,3,?

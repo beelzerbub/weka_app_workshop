@@ -23,6 +23,7 @@ if (isset($_POST["submit"]))
 
 	$cmd = 'java -classpath "weka.jar" weka.core.converters.CSVLoader -N "last" balance_csv.csv > balance_unseen_test.arff ';
 	exec($cmd,$output);
+	
 // run unseen data -p 5 is class attribute
 	$cmd1 = 'java -classpath "weka.jar" weka.classifiers.trees.J48 -T "balance_unseen_test.arff" -l "balance_web.model" -p 5';
 	exec($cmd1,$output1);

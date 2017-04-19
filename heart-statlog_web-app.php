@@ -15,9 +15,9 @@ if (isset($_POST["submit"])) {
 	$thal		= $_POST["thal"];		//thal: 3 = normal; 6 = fixed defect; 7 = reversable defect 
 	$id 	= $_POST["id"];
 	echo "<h2> From Your Input data ";
-	$data = array('age,sex,chest_pain,rbp,sc,fbs,rer,max_hr,eia,oldpeak,slope_peak,major_vessel,thal,class',
-		'70,1,4,130,322,0,2,109,0,2.4,2,3,3,present',
+	$data = array('age,sex,chest,resting_blood_pressure,serum_cholestoral,fasting_blood_sugar,resting_electrocardiographic_results,maximum_heart_rate_achieved,exercise_induced_angina,oldpeak,slope,number_of_major_vessels,thal,class',
 		'67,0,3,115,564,0,2,160,0,1.6,2,0,7,absent',
+		'70,1,4,130,322,0,2,109,0,2.4,2,3,3,present',
 		'71,0,3,110,265,1,2,130,0,0,1,1,3,?'
 		/*'$age,$sex,$chest_pain,$rbp,$sc,$fbs,$rer,$max_hr,$eia,$oldpeak,$slope_peak,$major_vessel,$thal,?'*/);
 
